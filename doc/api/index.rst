@@ -45,6 +45,13 @@ Saving and displaying the figure:
 Data Processing
 ---------------
 
+Operations on GMT settings:
+
+.. autosummary::
+    :toctree: generated
+
+    set
+
 Operations on tabular data:
 
 .. autosummary::
