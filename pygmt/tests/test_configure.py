@@ -1,20 +1,20 @@
 """
-Tests for gmt defaults
+Tests for gmt configure
 """
 import pytest
 
-from .. import Figure, set
+from .. import Figure, configure
 
 
 @pytest.mark.mpl_image_compare
-def test_set():
-    set(FONT_ANNOT_PRIMARY="blue")
+def test_configure():
+    configure(FONT_ANNOT_PRIMARY="blue")
     fig = Figure()
     fig.basemap(
         region="0/10/0/10", projection="X10c/10c", frame=["af", '+t"Blue Annotation"']
     )
 
-    with set(FONT_LABEL="red", FONT_ANNOT_PRIMARY="red"):
+    with configure(FONT_LABEL="red", FONT_ANNOT_PRIMARY="red"):
         fig.basemap(
             region="0/10/0/10",
             projection="X10c/10c",

@@ -144,9 +144,9 @@ def which(fname, **kwargs):
     return path
 
 
-class set:
+class configure:
     """
-    Set GMT defaults.
+    Class for GMT configurations.
     """
 
     def __init__(self, **kwargs):
