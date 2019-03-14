@@ -144,7 +144,7 @@ def which(fname, **kwargs):
     return path
 
 
-class configure:
+class config:
     """
     Class for GMT configurations.
     """
