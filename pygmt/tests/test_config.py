@@ -8,6 +8,9 @@ from .. import Figure, config
 
 @pytest.mark.mpl_image_compare
 def test_config():
+    """
+    Test if config works globally and locally.
+    """
     config(FONT_ANNOT_PRIMARY="blue")
     fig = Figure()
     fig.basemap(
