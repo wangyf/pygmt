@@ -118,12 +118,10 @@ before_install:
       fi
     - cd "$TRAVIS_BUILD_DIR"
     # Get the Fatiando CI scripts
-    - git clone https://github.com/fatiando/continuous-integration.git
+    - git clone --branch=1.1.1 --depth=1 https://github.com/fatiando/continuous-integration.git
     # Download and install miniconda and setup dependencies
     # Need to source the script to set the PATH variable globaly
     - source continuous-integration/travis/setup-miniconda.sh
-    # Install the latest master of sphinx-gallery to use the scapper
-    - pip install --upgrade git+https://github.com/sphinx-gallery/sphinx-gallery.git
     # Show installed pkg information for postmortem diagnostic
     - conda list
 
